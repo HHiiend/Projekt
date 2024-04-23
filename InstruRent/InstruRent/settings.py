@@ -40,6 +40,10 @@ INSTALLED_APPS = [
     "authentication",
 ]
 
+# settings.py
+
+AUTH_USER_MODEL = 'authentication.CustomUser'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -69,6 +73,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'InstruRent.wsgi.application'
+
+AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.ModelBackend']
 
 
 # Database
