@@ -1,10 +1,12 @@
 # authentication/urls.py
 
 from django.urls import path
-from .views import register
+from .views import register, UserSettingsAPIView
 from . import views
 
 urlpatterns = [
     path('signup/', register, name='signup'),
     # You can add more authentication related URLs here
+    path('settings/', UserSettingsAPIView.as_view(), name='user-settings'),
+
 ]
