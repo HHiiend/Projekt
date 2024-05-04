@@ -1,4 +1,4 @@
-#!/Users/marjekikas/Desktop/Projekt/myenv/bin/python3
+#!/Users/marjekikas/Desktop/Projekt/InstruRent/myenv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
