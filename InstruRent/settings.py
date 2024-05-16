@@ -39,7 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     "authentication",
-]
+    "messaging",
+    "search",
+    "subscriptions",
+    "products",
+    ]
 
 # settings.py
 
@@ -90,14 +94,7 @@ DATABASES = {
         "HOST": "localhost",
         "PORT": "3306", 
     },
-    'authentication': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': "authentication",
-        "USER": "root",
-        "PASSWORD": "InstruR3nt",
-        "HOST": "localhost",
-        "PORT": "3306", 
-    },
+    
 }
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
